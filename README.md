@@ -204,6 +204,14 @@ Recompile everything again. Your coin code is ready now. Make an announcement fo
 
 ## Building CryptoNote 
 
+### On any platform please if you want stable build make these:
+ * Go to wCoin direcytory in your terminal
+ * `mkdir build; cd build`
+ * Build it:
+ `cmake; make CXXFLAGS='-Wall -Wextra  -Werror=terminate -Wpointer-arith -Wundef -Wvla -Wwrite-strings -Werror -Wno-error=extra -Wno-error=unused-function -Wno-error=deprecated-declarations -Wno-error=sign-compare -Wno-error=strict-aliasing -Wno-error=type-limits -Wno-unused-parameter -Wno-error=unused-variable -Wno-error=undef -Wno-error=uninitialized -Wno-error=unused-result -fpermissive -Wstrict-aliasing -Werror=permissive`
+`
+ * Or maybe add -j8 or -j4 for faset build:
+  `cmake; make -j8 CXXFLAGS='-Wall -Wextra  -Werror=terminate -Wpointer-arith -Wundef -Wvla -Wwrite-strings -Werror -Wno-error=extra -Wno-error=unused-function -Wno-error=deprecated-declarations -Wno-error=sign-compare -Wno-error=strict-aliasing -Wno-error=type-limits -Wno-unused-parameter -Wno-error=unused-variable -Wno-error=undef -Wno-error=uninitialized -Wno-error=unused-result -fpermissive -Wstrict-aliasing -Werror=permissive`
 ### On *nix
 
 Dependencies: GCC 4.7.3 or later, CMake 2.8.6 or later, and Boost 1.55.
