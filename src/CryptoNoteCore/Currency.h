@@ -62,12 +62,12 @@ public:
   size_t fusionTxMaxSize() const { return m_fusionTxMaxSize; }
   size_t fusionTxMinInputCount() const { return m_fusionTxMinInputCount; }
   size_t fusionTxMinInOutCountRatio() const { return m_fusionTxMinInOutCountRatio; }
-
-  const std::string& blocksFileName() const { return m_blocksFileName; }
-  const std::string& blocksCacheFileName() const { return m_blocksCacheFileName; }
-  const std::string& blockIndexesFileName() const { return m_blockIndexesFileName; }
-  const std::string& txPoolFileName() const { return m_txPoolFileName; }
-  const std::string& blockchinIndicesFileName() const { return m_blockchinIndicesFileName; }
+  bool Currency::getBlockReward(size_t medianSize, size_t currentBlockSize, uint64_t alreadyGeneratedCoins, uint64_t fee, uint64_t& reward, int64_t& emissionChange) const
+  const std::string & blocksFileName() const { return m_blocksFileName; }
+  const std::string & blocksCacheFileName() const { return m_blocksCacheFileName; }
+  const std::string & blockIndexesFileName() const { return m_blockIndexesFileName; }
+  const std::string & txPoolFileName() const { return m_txPoolFileName; }
+  const std::string & blockchinIndicesFileName() const { return m_blockchinIndicesFileName; }
 
   bool isTestnet() const { return m_testnet; }
 
