@@ -5,7 +5,9 @@ wCoin is a crypto currency based on CryptoNote currency protocol:
 * CryptoNote reference implementation: [CryptoNoteCoin](https://cryptonote-coin.org)
 * Discussion board and support: [CryptoNote Forum](https://forum.cryptonote.org)
 
-## wCoin forking how-to
+### wCoin forking how-to <hr /> <img align="right" src="https://wh0ami-lab.github.io/wcoin-website/wcoin.svg" width="240px" height="241px">
+
+
 
 ### Preparation
 
@@ -17,7 +19,7 @@ wCoin is a crypto currency based on CryptoNote currency protocol:
 
 ### First step. Give a name to your coin
 
-**Good name must be unique.** Check uniqueness with [google](http://google.com) and [Map of Coins](mapofcoins.com) or any other similar service.
+**Good name must be unique.** Check uniqueness with [google](http://google.com) and [Map of Coins](http://mapofcoins.com) or any other similar service.
 
 Name must be specified twice:
 
@@ -202,8 +204,16 @@ const char GENESIS_COINBASE_TX_HEX[] = "013c01ff0001ffff...785a33d9ebdba68b0";
 Recompile everything again. Your coin code is ready now. Make an announcement for the potential users and enjoy!
 
 
-## Building CryptoNote 
+## Building wCoin 
 
+### On any platform please if you want stable build make these:
+ * Go to wCoin direcytory in your terminal
+ * `mkdir build; cd build`
+ * Build it:
+ `cmake; make CXXFLAGS='-Wall -Wextra  -Werror=terminate -Wpointer-arith -Wundef -Wvla -Wwrite-strings -Werror -Wno-error=extra -Wno-error=unused-function -Wno-error=deprecated-declarations -Wno-error=sign-compare -Wno-error=strict-aliasing -Wno-error=type-limits -Wno-unused-parameter -Wno-error=unused-variable -Wno-error=undef -Wno-error=uninitialized -Wno-error=unused-result -fpermissive -Wstrict-aliasing -Werror=permissive`
+`
+ * Or maybe add -j8 or -j4 for faset build:
+  `cmake; make -j8 CXXFLAGS='-Wall -Wextra  -Werror=terminate -Wpointer-arith -Wundef -Wvla -Wwrite-strings -Werror -Wno-error=extra -Wno-error=unused-function -Wno-error=deprecated-declarations -Wno-error=sign-compare -Wno-error=strict-aliasing -Wno-error=type-limits -Wno-unused-parameter -Wno-error=unused-variable -Wno-error=undef -Wno-error=uninitialized -Wno-error=unused-result -fpermissive -Wstrict-aliasing -Werror=permissive`
 ### On *nix
 
 Dependencies: GCC 4.7.3 or later, CMake 2.8.6 or later, and Boost 1.55.
@@ -232,7 +242,8 @@ Dependencies: MSVC 2013 or later, CMake 2.8.6 or later, and Boost 1.55. You may 
 * http://www.boost.org/
 
 To build, change to a directory where this file is located, and run theas commands: 
-```
+```-Werror -Wno-error=extra -Wno-error=unused-function -Wno-error=deprecated-declarations -Wno-error=sign-compare -Wno-error=strict-aliasing -Wno-error=type-limits -Wno-unused-parameter -Wno-error=unused-variable -Wno-error=undef -Wno-error=uninitialized -Wno-error=unused-result -fpermissive -Wstrict-aliasing -Werror=permissive
+
 mkdir build
 cd build
 cmake -G "Visual Studio 12 Win64" ..
