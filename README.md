@@ -5,7 +5,7 @@ wCoin is a crypto currency based on CryptoNote currency protocol:
 * CryptoNote reference implementation: [CryptoNoteCoin](https://cryptonote-coin.org)
 * Discussion board and support: [CryptoNote Forum](https://forum.cryptonote.org)
 
-### wCoin forking how-to <hr /> <img align="right" src="https://wh0ami-lab.github.io/wcoin-website/wcoin.svg" width="120px" height="131px">
+### wCoin forking how-to <hr /> <img align="right" src="https://wh0ami-lab.github.io/wcoin-website/wcoin.svg" width="240px" height="241px">
 
 
 
