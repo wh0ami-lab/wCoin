@@ -1,4 +1,4 @@
-This is the reference code for [wCoin](https://github.com/wh0ami-lab/wcoin) cryptocurrency protocol.
+This is the reference code for [wCoin](https://github.com/wh0ami-lab/wcoin) cryptocurrency protocol...
 
 wCoin is a crypto currency based on CryptoNote currency protocol:
 
